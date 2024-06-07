@@ -9,8 +9,6 @@ from streamlit_option_menu import option_menu
 from firebase_admin import credentials, firestore
 from firebase_admin import auth
 
-creds_path = 'streamlit-web-424b3-78ff8d77cc71.json'
-
 @st.cache_resource
 def initialize(creds):
     cred = credentials.Certificate(creds)
